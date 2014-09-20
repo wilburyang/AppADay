@@ -3,11 +3,83 @@
 <html>
 
   <head>
-    
+    <script type="text/javascript">
+      function myFunction() {
+		var canvas = document.getElementById("canvas");
+      	var context = canvas.getContext("2d");
+      	context.fillRect(0, 0, 1264, 500);
+      }
+
+      function drawClockWithTime(t) {
+      	var canvas = document.getElementById("canvas");
+      	var context = canvas.getContext("2d");
+      	context.fillStyle = "black"; //black
+      	context.fillRect(0, 0, 1264, 500);
+
+      	context.strokeStyle = "green";
+      	var today = new Date();
+      	context.beginPath();
+      	for (var i = 0; i < 60; i++) {
+      		context.moveTo(632 + 200 * Math.cos((2 * 3.14159263 * i) / 60), 250 - 200 * Math.sin((2 * 3.14159263 * i) / 60));
+      		context.lineTo(632 + 230 * Math.cos((2 * 3.14159263 * i) / 60), 250 - 230 * Math.sin((2 * 3.14159263 * i) / 60));
+      	}
+      	context.stroke();
+
+      	var hoursHand = today.getHours() + today.getMinutes() / 60;
+      	hoursHand = 3 - hoursHand;
+      	context.strokeStyle = "red";
+      	context.beginPath();
+  		context.moveTo(632 + 50 * Math.cos((4 * 3.14159263 * hoursHand) / 24), 250 - 50 * Math.sin((4 * 3.14159263 * hoursHand) / 24));
+  		context.lineTo(632 + 230 * Math.cos((4 * 3.14159263 * hoursHand) / 24), 250 - 230 * Math.sin((4 * 3.14159263 * hoursHand) / 24));
+      	context.stroke();
+
+
+
+      	var minutesHand = today.getMinutes() + today.getSeconds() / 60;
+      	minutesHand = 15 - minutesHand;
+      	context.strokeStyle = "yellow";
+      	context.beginPath();
+  		context.moveTo(632 + 40 * Math.cos((2 * 3.14159263 * minutesHand) / 60), 250 - 40 * Math.sin((2 * 3.14159263 * minutesHand) / 60));
+  		context.lineTo(632 + 300 * Math.cos((2 * 3.14159263 * minutesHand) / 60), 250 - 300 * Math.sin((2 * 3.14159263 * minutesHand) / 60));
+      	context.stroke();
+
+
+      	var secondsHand = today.getSeconds();
+      	secondsHand = 15 - secondsHand;
+      	context.strokeStyle = "blue";
+      	context.beginPath();
+  		context.moveTo(632 + 30 * Math.cos((2 * 3.14159263 * secondsHand) / 60), 250 - 30 * Math.sin((2 * 3.14159263 * secondsHand) / 60));
+  		context.lineTo(632 + 400 * Math.cos((2 * 3.14159263 * secondsHand) / 60), 250 - 400 * Math.sin((2 * 3.14159263 * secondsHand) / 60));
+      	context.stroke();
+
+      	context.fillStyle = "white";
+      	for (var i = 1; i <= 12; i++) {
+      		var angle = (3 - i) * (2 * 3.141592 / 12);
+      		var xPos = 632 + 230 * Math.cos(angle);
+      		var yPos = 250 - 230 * Math.sin(angle);
+      		context.fillRect(xPos, yPos, 10, 10);
+      	}
+
+      }
+
+      function updateTime() {
+      	var text = document.getElementById("text");
+      	var today = new Date();
+      	text.innerHTML = today;
+      	drawClockWithTime(today);
+      	setTimeout(function(){updateTime()}, 500);
+      }
+    </script>
   </head>
 
-  <body>
+  <body onLoad = "updateTime()">
     Babby's first app
+    <button type="button" onclick="myFunction()">Date</button>
+    <br>
+
+    <canvas id="canvas" width="1264" height="500"></canvas>
+    <br>
+    <p id="text"></p>
   </body>
 
 </html>
