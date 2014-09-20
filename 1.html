@@ -6,94 +6,91 @@
 
   <style type = "text/css">
   body {
-  	padding: 0;
-  	margin: 0;
-  	background-color: black;
+    padding: 0;
+    margin: 0;
+    background-color: black;
   }
   </style>
 
 
     <script type="text/javascript">
       function resizeCanvas() {
-      	canvas = document.getElementById("canvas");
-      	canvas.width = window.innerWidth - 4;
-      	canvas.height = window.innerHeight - 4;
+        canvas = document.getElementById("canvas");
+        canvas.width = window.innerWidth - 4;
+        canvas.height = window.innerHeight - 4;
       }
 
       function drawClockWithTime(t) {
-      	var canvas = document.getElementById("canvas");
-      	resizeCanvas();
-      	var context = canvas.getContext("2d");
-      	context.fillStyle = "black"; //black
-      	var width = window.innerWidth;
-      	var height = window.innerHeight;
-      	var xCenter = width / 2;
-      	var yCenter = height / 2;
+        var canvas = document.getElementById("canvas");
+        resizeCanvas();
+        var context = canvas.getContext("2d");
+        context.fillStyle = "black"; //black
+        var width = window.innerWidth;
+        var height = window.innerHeight;
+        var xCenter = width / 2;
+        var yCenter = height / 2;
 
-      	context.fillRect(0, 0, width, height);
+        context.fillRect(0, 0, width, height);
 
-      	context.strokeStyle = "green";
-      	var today = new Date();
-      	context.beginPath();
-      	for (var i = 0; i < 60; i++) {
-      		context.moveTo(xCenter + 200 * Math.cos((2 * 3.14159263 * i) / 60), yCenter - 200 * Math.sin((2 * 3.14159263 * i) / 60));
-      		context.lineTo(xCenter + 205 * Math.cos((2 * 3.14159263 * i) / 60), yCenter - 205 * Math.sin((2 * 3.14159263 * i) / 60));
-      	}
-      	context.stroke();
+        context.strokeStyle = "green";
+        var today = new Date();
+        context.beginPath();
+        for (var i = 0; i < 60; i++) {
+          context.moveTo(xCenter + 200 * Math.cos((2 * 3.14159263 * i) / 60), yCenter - 200 * Math.sin((2 * 3.14159263 * i) / 60));
+          context.lineTo(xCenter + 205 * Math.cos((2 * 3.14159263 * i) / 60), yCenter - 205 * Math.sin((2 * 3.14159263 * i) / 60));
+        }
+        context.stroke();
 
-      	var hoursHand = today.getHours() + today.getMinutes() / 60;
-      	hoursHand = 3 - hoursHand;
-      	context.strokeStyle = "white";
-      	context.beginPath();
-  		context.moveTo(xCenter + 0 * Math.cos((4 * 3.14159263 * hoursHand) / 24), yCenter - 0 * Math.sin((4 * 3.14159263 * hoursHand) / 24));
-  		context.lineTo(xCenter + 115 * Math.cos((4 * 3.14159263 * hoursHand) / 24), yCenter - 115 * Math.sin((4 * 3.14159263 * hoursHand) / 24));
-      	context.stroke();
+        var hoursHand = today.getHours() + today.getMinutes() / 60;
+        hoursHand = 3 - hoursHand;
+        context.strokeStyle = "white";
+        context.beginPath();
+        context.moveTo(xCenter + 0 * Math.cos((4 * 3.14159263 * hoursHand) / 24), yCenter - 0 * Math.sin((4 * 3.14159263 * hoursHand) / 24));
+        context.lineTo(xCenter + 115 * Math.cos((4 * 3.14159263 * hoursHand) / 24), yCenter - 115 * Math.sin((4 * 3.14159263 * hoursHand) / 24));
+        context.stroke();
 
 
 
-      	var minutesHand = today.getMinutes() + today.getSeconds() / 60;
-      	minutesHand = 15 - minutesHand;
-      	context.strokeStyle = "white";
-      	context.beginPath();
-  		context.moveTo(xCenter + -20 * Math.cos((2 * 3.14159263 * minutesHand) / 60), yCenter - -20 * Math.sin((2 * 3.14159263 * minutesHand) / 60));
-  		context.lineTo(xCenter + 180 * Math.cos((2 * 3.14159263 * minutesHand) / 60), yCenter - 180 * Math.sin((2 * 3.14159263 * minutesHand) / 60));
-      	context.stroke();
+        var minutesHand = today.getMinutes() + today.getSeconds() / 60;
+        minutesHand = 15 - minutesHand;
+        context.strokeStyle = "white";
+        context.beginPath();
+        context.moveTo(xCenter + -20 * Math.cos((2 * 3.14159263 * minutesHand) / 60), yCenter - -20 * Math.sin((2 * 3.14159263 * minutesHand) / 60));
+        context.lineTo(xCenter + 180 * Math.cos((2 * 3.14159263 * minutesHand) / 60), yCenter - 180 * Math.sin((2 * 3.14159263 * minutesHand) / 60));
+        context.stroke();
 
-      	var milliseconds = today.getMilliseconds();
+        var milliseconds = today.getMilliseconds();
 
-      	var secondsHand = today.getSeconds();
+        var secondsHand = today.getSeconds();
 
-      	if (milliseconds < 50) {
-      		secondsHand += 0.5;
-      	}
-      	secondsHand = 15 - secondsHand;
-      	context.strokeStyle = "red";
-      	context.beginPath();
-  		context.moveTo(xCenter + -30 * Math.cos((2 * 3.14159263 * secondsHand) / 60), yCenter - -30 * Math.sin((2 * 3.14159263 * secondsHand) / 60));
-  		context.lineTo(xCenter + 180 * Math.cos((2 * 3.14159263 * secondsHand) / 60), yCenter - 180 * Math.sin((2 * 3.14159263 * secondsHand) / 60));
-      	context.stroke();
+        if (milliseconds < 50) {
+          secondsHand += 0.5;
+        }
+        secondsHand = 15 - secondsHand;
+        context.strokeStyle = "red";
+        context.beginPath();
+        context.moveTo(xCenter + -30 * Math.cos((2 * 3.14159263 * secondsHand) / 60), yCenter - -30 * Math.sin((2 * 3.14159263 * secondsHand) / 60));
+        context.lineTo(xCenter + 180 * Math.cos((2 * 3.14159263 * secondsHand) / 60), yCenter - 180 * Math.sin((2 * 3.14159263 * secondsHand) / 60));
+        context.stroke();
 
-      	context.fillStyle = "white";
-      	context.font = "bold 40px sans-serif";
-      	context.textAlign = "center";
-		context.textBaseline = "middle";
-      	for (var i = 1; i <= 12; i++) {
-      		var angle = (3 - i) * (2 * 3.141592 / 12);
-      		var xPos = xCenter + 230 * Math.cos(angle);
-      		var yPos = yCenter - 230 * Math.sin(angle);
-      		//context.fillRect(xPos, yPos, 5, 5);
-
-      		
-			context.fillText(i, xPos, yPos);
-      	}
+        context.fillStyle = "white";
+        context.font = "bold 40px sans-serif";
+        context.textAlign = "center";
+        context.textBaseline = "middle";
+        for (var i = 1; i <= 12; i++) {
+          var angle = (3 - i) * (2 * 3.141592 / 12);
+          var xPos = xCenter + 230 * Math.cos(angle);
+          var yPos = yCenter - 230 * Math.sin(angle);
+          context.fillText(i, xPos, yPos);
+        }
 
       }
 
       function updateTime() {
-      	var text = document.getElementById("text");
-      	var today = new Date();
-      	drawClockWithTime(today);
-      	setTimeout(function(){updateTime()}, 20);
+        var text = document.getElementById("text");
+        var today = new Date();
+        drawClockWithTime(today);
+        setTimeout(function(){updateTime()}, 20);
       }
     </script>
   </head>
