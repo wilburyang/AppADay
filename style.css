@@ -1,0 +1,79 @@
+body {
+  background-color: black;
+}
+
+#super-container {
+  width: 1000px;
+  margin: 100px auto 0 auto;
+}
+
+header {
+  margin-bottom: 100px;
+}
+
+.app-tile {
+  display: block;
+  float: left;
+  background-color: #ddd;
+  margin: 10px;
+  padding: 20px;
+  width: 248px;
+  height: 248px;
+  margin: 1px;
+}
+
+.iframe-container {
+  height: 180px;
+}
+
+.name-container {
+  padding: 30px 0 0 0;
+  text-align: center;
+}
+
+iframe {
+  height: 100%;
+  width: 100%;
+}
+
+iframe {
+  height: 300%;
+  width: 300%;
+  transform: scale(0.33333);
+  transform-origin: 0 0;
+}
+
+h2 {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: -1px;
+}
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  color: #ddd;
+  letter-spacing: -1px;
+}
+
+a.overlay-link {
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+a:hover > .app-tile {
+  background-color: white;
+}
+
+a:link {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+div.clear {
+  both: clear;
+}
