@@ -12,12 +12,13 @@ my = [1, 1, -1, -1]
 
 class Rectangle(Polygon):
 
-  def __init__(self, x, y, width, height, rotation):
+  def __init__(self, x, y, width, height, rotation, visible):
     self.x = x
     self.y = y
     self.width = width
     self.height = height
     self.rotation = rotation
+    self.visible = visible
 
     w2 = width / 2.
     h2 = height / 2.
@@ -36,26 +37,27 @@ class Rectangle(Polygon):
 
   def mutatedCopy(self):
     if self.isMovable():
-      return MovableRectangle(self.x + random.uniform(-10, 10), self.y + random.uniform(-10, 10), self.width, self.height, self.rotation + random.uniform(-0.1, 0.1))
+      return MovableRectangle(self.x + random.uniform(-1, 1), self.y + random.uniform(-1, 1), self.width, self.height, self.rotation + random.uniform(-0.01, 0.01), self.visible)
     else:
-      return MovableRectangle(self.x + random.uniform(-10, 10), self.y + random.uniform(-10, 10), self.width, self.height, self.rotation + random.uniform(-0.1, 0.1))
+      return ImmovableRectangle(self.x, self.y, self.width, self.height, self.rotation, self.visible)
 
   def isMovable(self):
     # to be implemented in subclasses
     raise NotImplementedError
+    
+  def isVisible(self):
+    return self.visible
 
 class MovableRectangle(Rectangle):
-  def __init__(self, x, y, width, height, rotation):
-    Rectangle.__init__(self, x, y, width, height, rotation)
+  def __init__(self, x, y, width, height, rotation, visible):
+    Rectangle.__init__(self, x, y, width, height, rotation, visible)
 
   def isMovable(self):
     return True
 
 class ImmovableRectangle(Rectangle):
-  def __init__(self, x, y, width, height, rotation):
-    Rectangle.__init__(self, x, y, width, height, rotation)
+  def __init__(self, x, y, width, height, rotation, visible):
+    Rectangle.__init__(self, x, y, width, height, rotation, visible)
 
   def isMovable(self):
     return False
-
-

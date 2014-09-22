@@ -1,0 +1,975 @@
+0 -3490.13442188
+2 -3406.86054571
+4 -3133.35639684
+9 -2989.53385987
+11 -2887.41605115
+12 -2821.63436797
+15 -2757.22284363
+16 -2726.6515004
+18 -2682.10721942
+21 -2477.23120974
+23 -2420.69647436
+24 -2407.1171529
+26 -2328.34452679
+27 -2327.48485688
+29 -2319.56926571
+30 -2232.33454057
+33 -2218.72982153
+34 -1985.23924828
+35 -1673.8692226
+36 -1606.71219336
+37 -1528.8203701
+38 -1506.12944323
+39 -1413.58941508
+42 -1337.61997661
+45 -1330.91389119
+51 -1135.39942667
+56 -1000.4133171
+59 -858.415877873
+61 -839.091957197
+67 -814.373713839
+68 -764.440964724
+69 -606.871458973
+70 -419.121992385
+73 -173.689891537
+74 -168.305850972
+75 -165.727698467
+79 5.1305355816
+80 68.3668788459
+81 123.460199627
+83 148.659377437
+84 153.37058062
+85 196.024095745
+86 303.050512647
+87 386.966101989
+88 387.64335093
+90 432.289456062
+91 588.872443499
+92 726.734173745
+93 732.036845544
+95 862.465774025
+96 998.102461875
+100 1060.45745187
+102 1151.17030567
+104 1157.37659362
+107 1190.05838505
+112 1207.25499564
+113 1218.22523935
+115 1273.43562013
+117 1275.61415502
+118 1283.00891954
+125 1309.03944713
+128 1364.42139105
+133 1384.90305085
+136 1391.65586489
+137 1396.27949667
+138 1405.64427886
+139 1420.11477557
+142 1426.24694242
+147 1434.01379975
+149 1458.29933644
+153 1488.46233238
+157 1505.26868575
+158 1514.92693845
+162 1528.54984378
+165 1533.4167179
+166 1552.18773989
+167 1553.4094622
+168 1576.03862955
+170 1594.81478631
+171 1614.82495761
+176 1615.71211571
+177 1625.46433139
+183 1631.92932699
+188 1644.84888603
+200 1664.16427709
+202 1668.4856861
+203 1668.71602751
+211 1680.21022925
+232 1682.41096913
+239 1682.72467936
+247 1684.53181786
+248 1687.03052147
+251 1691.25331045
+280 1696.72737047
+284 1697.32545789
+303 1701.29512172
+308 1701.47188638
+312 1709.86831182
+313 1713.59960586
+327 1715.71962123
+390 1717.36714283
+429 1718.63160628
+438 1728.55385232
+448 1732.71602162
+477 1736.37512278
+478 1740.84234287
+483 1743.4927985
+484 1745.43860866
+492 1747.06292643
+498 1748.52841084
+502 1756.11167972
+523 1767.37268873
+530 1767.85086257
+537 1769.86850297
+540 1773.90000425
+555 1777.02506416
+567 1778.41170833
+603 1782.91739487
+606 1783.96537629
+612 1787.51268969
+616 1790.84181427
+618 1795.75448246
+624 1796.17606098
+629 1801.07654869
+647 1802.34364239
+671 1808.84423489
+867 1816.18230817
+127
+         1537147 function calls (1536150 primitive calls) in 8.927 seconds
+
+   Ordered by: internal time
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+    36036    4.526    0.000    4.693    0.000 topology.py:40(__call__)
+       23    2.170    0.094    8.269    0.360 win32.py:101(step)
+        1    0.274    0.274    0.274    0.274 win32.py:29(_get_pixel_format_descriptor_matching_configs)
+    36036    0.183    0.000    0.432    0.000 base.py:52(geom_factory)
+     7013    0.152    0.000    0.163    0.000 polygon.py:346(geos_linearring_from_py)
+36041/36040    0.130    0.000    0.160    0.000 {__import__}
+    36036    0.126    0.000    0.163    0.000 topology.py:33(__call__)
+    72072    0.112    0.000    0.112    0.000 base.py:46(geometry_type_name)
+    50068    0.111    0.000    0.148    0.000 base.py:200(empty)
+     1001    0.109    0.000    5.759    0.006 __init__.py:14(fitness)
+   108132    0.070    0.000    0.186    0.000 topology.py:14(_validate)
+    30030    0.066    0.000    4.103    0.000 base.py:527(intersection)
+    36036    0.060    0.000    0.231    0.000 base.py:381(area)
+     7013    0.043    0.000    0.324    0.000 objects.py:15(__init__)
+     2934    0.039    0.000    0.040    0.000 __init__.py:382(__getitem__)
+    50068    0.037    0.000    0.037    0.000 base.py:193(_is_empty)
+     7013    0.034    0.000    0.201    0.000 polygon.py:472(geos_polygon_from_py)
+    28052    0.032    0.000    0.047    0.000 objects.py:7(rotate)
+   252360    0.031    0.000    0.031    0.000 base.py:229(_geom)
+    43055    0.029    0.000    0.167    0.000 base.py:210(__del__)
+    43549    0.027    0.000    0.108    0.000 {hasattr}
+    36037    0.027    0.000    0.027    0.000 {locals}
+        9    0.026    0.003    0.054    0.006 win32.py:210(set_current)
+    36036    0.023    0.000    0.063    0.000 base.py:311(geometryType)
+        6    0.020    0.003    0.020    0.003 {_ctypes.LoadLibrary}
+    36036    0.017    0.000    0.080    0.000 base.py:314(type)
+     1124    0.017    0.000    0.028    0.000 lib_wgl.py:80(__call__)
+    72096    0.016    0.000    0.016    0.000 impl.py:43(__getitem__)
+        1    0.015    0.015    0.016    0.016 __init__.py:36(<module>)
+        2    0.014    0.007    0.017    0.009 __init__.py:4(<module>)
+     6006    0.014    0.000    1.110    0.000 base.py:523(difference)
+     6000    0.014    0.000    0.293    0.000 objects.py:37(mutatedCopy)
+     7013    0.014    0.000    0.229    0.000 polygon.py:207(__init__)
+     1203    0.013    0.000    0.013    0.000 lib.py:84(errcheck)
+     2204    0.012    0.000    0.012    0.000 __init__.py:119(WINFUNCTYPE)
+        1    0.012    0.012    0.121    0.121 __init__.py:92(<module>)
+     2547    0.012    0.000    0.069    0.000 lib_wgl.py:98(link_GL)
+     2129    0.011    0.000    0.011    0.000 __init__.py:78(CFUNCTYPE)
+        1    0.011    0.011    0.011    0.011 hashlib.py:55(<module>)
+    39220    0.010    0.000    0.051    0.000 {getattr}
+        4    0.009    0.002    8.928    2.232 __init__.py:1(<module>)
+        1    0.008    0.008    0.041    0.041 geos.py:3(<module>)
+    56104    0.008    0.000    0.008    0.000 {math.cos}
+        1    0.008    0.008    0.513    0.513 __init__.py:123(<module>)
+        1    0.008    0.008    0.012    0.012 __init__.py:24(<module>)
+    56104    0.007    0.000    0.007    0.000 {math.sin}
+        1    0.007    0.007    6.086    6.086 __init__.py:85(find_good_arrangement)
+    36060    0.007    0.000    0.007    0.000 geos.py:491(errcheck_predicate)
+   107/71    0.007    0.000    0.016    0.000 __init__.py:609(_wnd_proc)
+        2    0.007    0.003    0.029    0.015 win32.py:4(<module>)
+        1    0.006    0.006    0.006    0.006 shutil.py:5(<module>)
+    36279    0.006    0.000    0.006    0.000 {_ctypes.byref}
+    36048    0.006    0.000    0.006    0.000 {globals}
+    12004    0.006    0.000    0.007    0.000 random.py:358(uniform)
+        1    0.005    0.005    0.047    0.047 coords.py:2(<module>)
+     1000    0.005    0.000    0.299    0.000 __init__.py:55(get_mutated_furniture)
+     7013    0.005    0.000    0.014    0.000 base.py:233(_geom)
+        1    0.005    0.005    0.014    0.014 __init__.py:159(<module>)
+        1    0.005    0.005    0.072    0.072 glext_arb.py:38(<module>)
+    38162    0.004    0.000    0.004    0.000 {method 'append' of 'list' objects}
+        2    0.004    0.002    0.060    0.030 __init__.py:139(_create)
+     4008    0.004    0.000    0.169    0.000 objects.py:48(__init__)
+    16194    0.004    0.000    0.004    0.000 {isinstance}
+        1    0.004    0.004    0.010    0.010 __init__.py:284(close)
+        1    0.004    0.004    0.004    0.004 collections.py:1(<module>)
+        1    0.004    0.004    0.019    0.019 inspect.py:25(<module>)
+        1    0.004    0.004    0.017    0.017 random.py:40(<module>)
+        1    0.004    0.004    0.012    0.012 zipfile.py:3(<module>)
+        1    0.003    0.003    0.005    0.005 geo.py:3(<module>)
+        3    0.003    0.001    0.003    0.001 base.py:4(<module>)
+     7287    0.003    0.000    0.003    0.000 {range}
+        1    0.003    0.003    0.003    0.003 compat.py:38(<module>)
+     7013    0.003    0.000    0.009    0.000 coords.py:20(required)
+        1    0.003    0.003    0.052    0.052 base.py:2(<module>)
+     2004    0.003    0.000    0.103    0.000 objects.py:55(__init__)
+        1    0.003    0.003    0.014    0.014 resource.py:85(<module>)
+        1    0.003    0.003    0.003    0.003 impl.py:12(<module>)
+        1    0.003    0.003    0.026    0.026 __init__.py:74(<module>)
+        1    0.002    0.002    0.014    0.014 __init__.py:67(_require_ctypes_version)
+     6007    0.002    0.000    0.002    0.000 {math.sqrt}
+        1    0.002    0.002    0.022    0.022 event.py:137(<module>)
+        1    0.002    0.002    0.003    0.003 vertexdomain.py:57(<module>)
+    10191    0.002    0.000    0.002    0.000 {_ctypes.POINTER}
+        1    0.002    0.002    0.059    0.059 __init__.py:2(<module>)
+        6    0.002    0.000    0.002    0.000 collections.py:288(namedtuple)
+        1    0.002    0.002    0.004    0.004 vertexbuffer.py:45(<module>)
+   142/13    0.002    0.000    0.005    0.000 sre_parse.py:379(_parse)
+     1145    0.002    0.000    0.002    0.000 __init__.py:501(cast)
+        1    0.002    0.002    0.003    0.003 vertexattribute.py:132(<module>)
+     2934    0.002    0.000    0.042    0.000 __init__.py:375(__getattr__)
+        1    0.002    0.002    0.011    0.011 tokenize.py:23(<module>)
+18902/18735    0.002    0.000    0.002    0.000 {len}
+        1    0.002    0.002    0.002    0.002 dis.py:1(<module>)
+      124    0.002    0.000    0.003    0.000 sre_compile.py:207(_optimize_charset)
+       12    0.002    0.000    0.002    0.000 base.py:284(_get_coords)
+        1    0.002    0.002    0.002    0.002 vertexbuffer.py:370(MappableVertexBufferObject)
+        1    0.002    0.002    0.002    0.002 __init__.py:351(set_visible)
+     1104    0.002    0.000    0.027    0.000 gl_info.py:100(<genexpr>)
+        1    0.002    0.002    0.061    0.061 objects.py:1(<module>)
+        1    0.002    0.002    0.002    0.002 {nt.urandom}
+   303/12    0.001    0.000    0.005    0.000 sre_compile.py:32(_compile)
+        1    0.001    0.001    0.017    0.017 clock.py:139(<module>)
+        1    0.001    0.001    0.011    0.011 __init__.py:59(<module>)
+        2    0.001    0.001    0.027    0.013 __init__.py:64(get_display)
+        1    0.001    0.001    0.002    0.002 types.py:36(<module>)
+    12012    0.001    0.000    0.001    0.000 {method 'random' of '_random.Random' objects}
+        1    0.001    0.001    0.001    0.001 win32.py:36(<module>)
+        1    0.001    0.001    0.001    0.001 {function seed at 0x02070730}
+        1    0.001    0.001    0.006    0.006 lib.py:36(<module>)
+     1254    0.001    0.000    0.001    0.000 sre_parse.py:182(__next)
+       27    0.001    0.000    0.001    0.000 sre_compile.py:258(_mk_bitmap)
+        1    0.001    0.001    0.014    0.014 __init__.py:38(<module>)
+     2200    0.001    0.000    0.001    0.000 lib_wgl.py:72(__init__)
+        1    0.001    0.001    0.001    0.001 winkey.py:36(<module>)
+    70/65    0.001    0.000    6.088    0.094 __init__.py:622(_wnd_proc_view)
+       11    0.001    0.000    0.028    0.003 gl_info.py:85(set_active_context)
+        1    0.001    0.001    0.009    0.009 gl.py:38(<module>)
+     4004    0.001    0.000    0.001    0.000 objects.py:51(isMovable)
+     3432    0.001    0.000    0.001    0.000 {method 'startswith' of 'str' objects}
+  428/139    0.001    0.000    0.001    0.000 sre_parse.py:140(getwidth)
+        1    0.001    0.001    0.005    0.005 lib_wgl.py:36(<module>)
+        1    0.001    0.001    0.001    0.001 zipfile.py:433(_GenerateCRCTable)
+        1    0.001    0.001    0.001    0.001 event.py:38(<module>)
+        1    0.001    0.001    0.001    0.001 point.py:2(<module>)
+     1335    0.001    0.000    0.001    0.000 sre_parse.py:130(__getitem__)
+        2    0.001    0.000    6.087    3.043 __init__.py:794(_event_mousebutton)
+        1    0.001    0.001    0.001    0.001 gl_info.py:56(<module>)
+     1236    0.000    0.000    0.000    0.000 {setattr}
+     8666    0.000    0.000    0.000    0.000 {method 'pop' of 'dict' objects}
+        1    0.000    0.000    0.000    0.000 polygon.py:2(<module>)
+        1    0.000    0.000    0.001    0.001 geos.py:592(__init__)
+    76/12    0.000    0.000    0.005    0.000 sre_parse.py:301(_parse_sub)
+     2002    0.000    0.000    0.000    0.000 objects.py:58(isMovable)
+        1    0.000    0.000    0.015    0.015 lib.py:37(<module>)
+        1    0.000    0.000    0.000    0.000 wgl_info.py:37(<module>)
+        2    0.000    0.000    0.000    0.000 win32.py:191(attach)
+        1    0.000    0.000    0.000    0.000 win32.py:215(detach)
+        1    0.000    0.000    0.005    0.005 wglext_arb.py:38(<module>)
+        2    0.000    0.000    0.000    0.000 __init__.py:275(_update_view_location)
+        1    0.000    0.000    0.001    0.001 ctypes_declarations.py:20(prototype)
+    27/25    0.000    0.000    6.116    0.245 event.py:318(dispatch_event)
+     2206    0.000    0.000    0.000    0.000 gl_info.py:202(have_context)
+        1    0.000    0.000    0.000    0.000 ftools.py:17(<module>)
+     1024    0.000    0.000    0.001    0.000 sre_parse.py:201(get)
+      124    0.000    0.000    0.003    0.000 sre_compile.py:178(_compile_charset)
+       12    0.000    0.000    0.000    0.000 coords.py:89(__getitem__)
+        1    0.000    0.000    0.001    0.001 glu.py:38(<module>)
+        1    0.000    0.000    0.000    0.000 wintypes.py:6(<module>)
+        1    0.000    0.000    0.001    0.001 io.py:34(<module>)
+       12    0.000    0.000    0.002    0.000 __init__.py:207(draw_indexed)
+       23    0.000    0.000    0.021    0.001 base.py:248(idle)
+        1    0.000    0.000    0.001    0.001 wgl.py:38(<module>)
+        1    0.000    0.000    0.000    0.000 key.py:61(<module>)
+      848    0.000    0.000    0.000    0.000 sre_parse.py:195(match)
+        1    0.000    0.000    0.000    0.000 constants.py:39(<module>)
+        1    0.000    0.000    0.000    0.000 heapq.py:31(<module>)
+      412    0.000    0.000    0.000    0.000 lib.py:123(decorate_function)
+       16    0.000    0.000    0.001    0.000 win32.py:158(__init__)
+        2    0.000    0.000    0.020    0.010 __init__.py:64(show_arrangement)
+        1    0.000    0.000    0.001    0.001 threading.py:1(<module>)
+        7    0.000    0.000    0.020    0.003 __init__.py:349(__init__)
+        5    0.000    0.000    0.000    0.000 __init__.py:375(set_mouse_platform_visible)
+       59    0.000    0.000    0.001    0.000 lib_wgl.py:126(link_GLU)
+        1    0.000    0.000    8.290    8.290 base.py:153(_run_estimated)
+      621    0.000    0.000    0.000    0.000 sre_parse.py:126(__len__)
+       12    0.000    0.000    0.011    0.001 re.py:226(_compile)
+       12    0.000    0.000    0.000    0.000 polygon.py:231(exterior)
+      510    0.000    0.000    0.000    0.000 __init__.py:131(WinFunctionType)
+      501    0.000    0.000    0.000    0.000 __init__.py:104(CFunctionType)
+       29    0.000    0.000    0.000    0.000 threading.py:146(acquire)
+      393    0.000    0.000    0.000    0.000 sre_parse.py:138(append)
+      127    0.000    0.000    0.000    0.000 sre_compile.py:354(_simple)
+       24    0.000    0.000    0.000    0.000 predicates.py:20(__call__)
+       23    0.000    0.000    0.000    0.000 clock.py:254(update_time)
+       12    0.000    0.000    0.000    0.000 __init__.py:718(_event_mousemove)
+       23    0.000    0.000    0.000    0.000 base.py:61(dispatch_posted_events)
+      303    0.000    0.000    0.000    0.000 sre_parse.py:90(__init__)
+       54    0.000    0.000    0.000    0.000 {method 'format' of 'str' objects}
+      702    0.000    0.000    0.000    0.000 {min}
+        1    0.000    0.000    0.000    0.000 __init__.py:267(BaseWindow)
+        1    0.000    0.000    0.000    0.000 win32.py:49(__init__)
+      409    0.000    0.000    0.000    0.000 {method 'get' of 'dict' objects}
+        2    0.000    0.000    0.000    0.000 __init__.py:371(set_caption)
+        1    0.000    0.000    0.000    0.000 opcode.py:5(<module>)
+       23    0.000    0.000    0.000    0.000 Queue.py:150(get)
+       24    0.000    0.000    0.000    0.000 base.py:287(_get_has_exit)
+        1    0.000    0.000    0.000    0.000 win32.py:183(_set_pixel_format)
+        1    0.000    0.000    0.000    0.000 linref.py:2(<module>)
+    55/54    0.000    0.000    0.035    0.001 __init__.py:349(__getattr__)
+        1    0.000    0.000    0.000    0.000 topology.py:8(<module>)
+        2    0.000    0.000    0.367    0.184 __init__.py:416(__init__)
+    24/23    0.000    0.000    6.116    0.266 __init__.py:1153(dispatch_event)
+        5    0.000    0.000    0.000    0.000 {built-in method __new__ of type object at 0x1E228430}
+        1    0.000    0.000    0.004    0.004 win32.py:77(_get_arb_pixel_format_matching_configs)
+        1    0.000    0.000    0.000    0.000 glu_info.py:57(<module>)
+        9    0.000    0.000    0.028    0.003 base.py:292(set_current)
+        1    0.000    0.000    0.000    0.000 threading.py:640(Thread)
+       23    0.000    0.000    0.000    0.000 clock.py:279(call_scheduled_functions)
+       29    0.000    0.000    0.000    0.000 threading.py:186(release)
+       24    0.000    0.000    0.000    0.000 base.py:549(is_empty)
+       12    0.000    0.000    0.000    0.000 vertexattribute.py:349(set_region)
+       12    0.000    0.000    0.000    0.000 vertexbuffer.py:242(__init__)
+       26    0.000    0.000    0.000    0.000 weakref.py:414(keys)
+        1    0.000    0.000    0.000    0.000 multipoint.py:2(<module>)
+        1    0.000    0.000    0.000    0.000 win32.py:136(_set_pixel_format)
+       12    0.000    0.000    0.001    0.000 sre_compile.py:359(_compile_info)
+       51    0.000    0.000    0.000    0.000 __init__.py:103(__iter__)
+        1    0.000    0.000    0.000    0.000 Queue.py:1(<module>)
+        1    0.000    0.000    0.000    0.000 _endian.py:4(<module>)
+        1    0.000    0.000    0.000    0.000 base.py:658(BaseMultipartGeometry)
+        2    0.000    0.000    0.368    0.184 __init__.py:116(__init__)
+       14    0.000    0.000    0.000    0.000 __init__.py:658(_get_location)
+       12    0.000    0.000    0.011    0.001 sre_compile.py:493(compile)
+      244    0.000    0.000    0.000    0.000 collections.py:332(<genexpr>)
+        9    0.000    0.000    0.000    0.000 glu_info.py:84(set_active_context)
+        1    0.000    0.000    0.000    0.000 linestring.py:2(<module>)
+        4    0.000    0.000    0.000    0.000 gl_info.py:148(have_version)
+        1    0.000    0.000    0.000    0.000 multilinestring.py:2(<module>)
+       12    0.000    0.000    0.005    0.000 sre_parse.py:677(parse)
+        1    0.000    0.000    0.000    0.000 multipolygon.py:2(<module>)
+        2    0.000    0.000    0.000    0.000 __init__.py:257(__init__)
+       75    0.000    0.000    0.000    0.000 sre_parse.py:257(_escape)
+       16    0.000    0.000    0.000    0.000 {zip}
+       12    0.000    0.000    0.000    0.000 vertexbuffer.py:92(create_mappable_buffer)
+        1    0.000    0.000    0.000    0.000 predicates.py:3(<module>)
+        1    0.000    0.000    0.000    0.000 win32.py:105(__init__)
+       55    0.000    0.000    0.000    0.000 {method 'acquire' of 'thread.lock' objects}
+        1    0.000    0.000    0.000    0.000 __init__.py:94(Win32Window)
+        1    0.000    0.000    0.000    0.000 win32.py:236(attach)
+        2    0.000    0.000    0.000    0.000 __init__.py:455(set_exclusive_keyboard)
+       24    0.000    0.000    0.000    0.000 coords.py:64(_update)
+        5    0.000    0.000    0.000    0.000 abc.py:86(__new__)
+        1    0.000    0.000    0.000    0.000 allocation.py:48(<module>)
+        7    0.000    0.000    0.000    0.000 threading.py:259(__init__)
+        2    0.000    0.000    0.000    0.000 __init__.py:418(set_exclusive_mouse)
+        3    0.000    0.000    0.000    0.000 __init__.py:493(PYFUNCTYPE)
+        8    0.000    0.000    0.000    0.000 abc.py:148(__subclasscheck__)
+        2    0.000    0.000    0.000    0.000 win32.py:11(get_screens)
+       12    0.000    0.000    0.000    0.000 coords.py:68(__len__)
+        1    0.000    0.000    0.000    0.000 proxy.py:2(<module>)
+       12    0.000    0.000    0.000    0.000 {_sre.compile}
+        1    0.000    0.000    0.000    0.000 wintypes.py:146(WIN32_FIND_DATAA)
+       25    0.000    0.000    0.000    0.000 {method 'split' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 {nt.putenv}
+       52    0.000    0.000    0.000    0.000 sre_parse.py:72(opengroup)
+        2    0.000    0.000    0.000    0.000 __init__.py:348(activate)
+       12    0.000    0.000    0.000    0.000 vertexattribute.py:220(create_attribute)
+       35    0.000    0.000    0.000    0.000 {method 'join' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 __init__.py:224(_read_environment)
+        1    0.000    0.000    0.000    0.000 ctypes_declarations.py:4(<module>)
+        4    0.000    0.000    0.000    0.000 impl.py:116(impl_items)
+        2    0.000    0.000    0.000    0.000 win32.py:221(flip)
+        1    0.000    0.000    0.000    0.000 token.py:1(<module>)
+      249    0.000    0.000    0.000    0.000 {method 'endswith' of 'str' objects}
+       12    0.000    0.000    0.000    0.000 vertexattribute.py:511(set_pointer)
+        1    0.000    0.000    0.000    0.000 base.py:95(deserialize_wkb)
+        2    0.000    0.000    0.278    0.139 win32.py:31(get_matching_configs)
+        1    0.000    0.000    0.000    0.000 __init__.py:708(on_resize)
+       12    0.000    0.000    0.000    0.000 vertexattribute.py:270(__init__)
+        1    0.000    0.000    0.000    0.000 wintypes.py:158(WIN32_FIND_DATAW)
+        1    0.000    0.000    0.000    0.000 geos.py:110(_geos_version)
+        1    0.000    0.000    0.000    0.000 types.py:269(MONITORINFOEX)
+       14    0.000    0.000    0.000    0.000 __init__.py:147(_check_size)
+        1    0.000    0.000    0.000    0.000 __init__.py:108(randomize_furniture)
+      386    0.000    0.000    0.000    0.000 sre_compile.py:24(_identityfunction)
+       10    0.000    0.000    0.000    0.000 sre_parse.py:216(isname)
+       12    0.000    0.000    0.006    0.001 sre_compile.py:478(_code)
+        2    0.000    0.000    0.020    0.010 __init__.py:117(on_draw)
+       30    0.000    0.000    0.000    0.000 {all}
+      127    0.000    0.000    0.000    0.000 sre_parse.py:134(__setitem__)
+        1    0.000    0.000    0.000    0.000 {method 'copy' of 'dict' objects}
+       52    0.000    0.000    0.000    0.000 sre_parse.py:83(closegroup)
+       43    0.000    0.000    0.000    0.000 {method 'keys' of 'dict' objects}
+        1    0.000    0.000    0.000    0.000 collection.py:2(<module>)
+        1    0.000    0.000    0.000    0.000 base.py:159(BaseGeometry)
+       61    0.000    0.000    0.000    0.000 threading.py:63(_note)
+       12    0.000    0.000    0.000    0.000 vertexattribute.py:501(__init__)
+       25    0.000    0.000    0.000    0.000 {method 'items' of 'dict' objects}
+      259    0.000    0.000    0.000    0.000 {method 'upper' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 {binascii.hexlify}
+       22    0.000    0.000    0.000    0.000 _weakrefset.py:36(__init__)
+       12    0.000    0.000    0.000    0.000 vertexbuffer.py:257(set_data_region)
+       12    0.000    0.000    0.000    0.000 vertexattribute.py:508(enable)
+        4    0.000    0.000    0.000    0.000 ntpath.py:414(normpath)
+       26    0.000    0.000    0.000    0.000 __init__.py:241(_event_wrapper)
+        1    0.000    0.000    0.003    0.003 random.py:100(seed)
+        1    0.000    0.000    0.000    0.000 __init__.py:265(_reset_cache)
+        4    0.000    0.000    0.000    0.000 base.py:86(__init__)
+      429    0.000    0.000    0.000    0.000 {ord}
+        2    0.000    0.000    0.000    0.000 __init__.py:637(_get_modifiers)
+       23    0.000    0.000    0.000    0.000 clock.py:402(get_sleep_time)
+        9    0.000    0.000    0.054    0.006 __init__.py:304(switch_to)
+       40    0.000    0.000    0.000    0.000 sre_parse.py:225(_class_escape)
+        4    0.000    0.000    0.000    0.000 {nt._getfullpathname}
+       23    0.000    0.000    0.000    0.000 {method 'insert' of 'list' objects}
+        1    0.000    0.000    0.000    0.000 types.py:192(BITMAPINFO)
+        2    0.000    0.000    0.000    0.000 __init__.py:1145(clear)
+        1    0.000    0.000    0.001    0.001 __init__.py:43(__init__)
+        2    0.000    0.000    0.000    0.000 __init__.py:567(_client_to_window_size)
+        1    0.000    0.000    6.086    6.086 __init__.py:135(on_mouse_press)
+       17    0.000    0.000    0.000    0.000 base.py:177(__init__)
+        1    0.000    0.000    8.291    8.291 base.py:119(run)
+        1    0.000    0.000    0.001    0.001 base.py:211(_legacy_setup)
+        1    0.000    0.000    0.000    0.000 types.py:199(LOGFONT)
+        1    0.000    0.000    0.000    0.000 <string>:1(<module>)
+        7    0.000    0.000    0.000    0.000 types.py:68(MAKEINTRESOURCE)
+      100    0.000    0.000    0.000    0.000 {max}
+      119    0.000    0.000    0.000    0.000 opcode.py:27(def_op)
+        1    0.000    0.000    0.000    0.000 __init__.py:599(dispatch_pending_events)
+        6    0.000    0.000    0.000    0.000 functools.py:39(wraps)
+        1    0.000    0.000    0.347    0.347 __init__.py:197(_create_shadow_window)
+        5    0.000    0.000    0.002    0.000 __init__.py:432(__getattr__)
+       41    0.000    0.000    0.000    0.000 topology.py:21(__init__)
+       23    0.000    0.000    0.000    0.000 Queue.py:200(_qsize)
+        1    0.000    0.000    0.010    0.010 __init__.py:725(on_close)
+       12    0.000    0.000    0.000    0.000 sre_parse.py:178(__init__)
+        6    0.000    0.000    0.000    0.000 functools.py:17(update_wrapper)
+       19    0.000    0.000    0.000    0.000 _weakrefset.py:58(__iter__)
+       24    0.000    0.000    0.000    0.000 {_struct.calcsize}
+       24    0.000    0.000    0.000    0.000 sre_compile.py:472(isstring)
+       10    0.000    0.000    0.000    0.000 __init__.py:363(__setattr__)
+        1    0.000    0.000    0.005    0.005 base.py:325(destroy)
+        6    0.000    0.000    0.000    0.000 {repr}
+        1    0.000    0.000    0.000    0.000 zipfile.py:501(ZipExtFile)
+        8    0.000    0.000    0.000    0.000 {thread.allocate_lock}
+        8    0.000    0.000    0.000    0.000 random.py:175(randrange)
+       28    0.000    0.000    0.000    0.000 {method 'replace' of 'str' objects}
+        4    0.000    0.000    0.001    0.000 wgl_info.py:56(get_extensions)
+        7    0.000    0.000    0.009    0.001 {map}
+       11    0.000    0.000    0.000    0.000 ntpath.py:95(splitdrive)
+        1    0.000    0.000    0.005    0.005 __init__.py:739(close)
+        1    0.000    0.000    0.000    0.000 pprint.py:35(<module>)
+       26    0.000    0.000    0.000    0.000 event.py:160(register_event_type)
+        1    0.000    0.000    0.000    0.000 base.py:721(GeometrySequence)
+      214    0.000    0.000    0.000    0.000 {method 'isalnum' of 'str' objects}
+        6    0.000    0.000    0.000    0.000 hashlib.py:94(__get_openssl_constructor)
+       47    0.000    0.000    0.000    0.000 {time.clock}
+        4    0.000    0.000    0.000    0.000 win32.py:13(enum_proc)
+        1    0.000    0.000    0.000    0.000 __init__.py:780(_event_mouseleave)
+       86    0.000    0.000    0.000    0.000 sre_parse.py:210(isident)
+        1    0.000    0.000    0.000    0.000 vertexdomain.py:333(VertexList)
+        1    0.000    0.000    0.000    0.000 clock.py:156(__init__)
+        1    0.000    0.000    0.000    0.000 {dir}
+        1    0.000    0.000    0.000    0.000 <string>:1(Attribute)
+        1    0.000    0.000    0.000    0.000 win32.py:130(notify)
+       24    0.000    0.000    0.000    0.000 os.py:424(__getitem__)
+       52    0.000    0.000    0.000    0.000 {method 'remove' of 'list' objects}
+        2    0.000    0.000    0.000    0.000 base.py:293(_set_has_exit)
+        1    0.000    0.000    0.000    0.000 __future__.py:48(<module>)
+        3    0.000    0.000    0.000    0.000 ntpath.py:173(split)
+        4    0.000    0.000    0.000    0.000 win32.py:97(__init__)
+    28/17    0.000    0.000    0.000    0.000 {issubclass}
+       30    0.000    0.000    0.000    0.000 collections.py:358(<genexpr>)
+        7    0.000    0.000    0.000    0.000 threading.py:241(Condition)
+        2    0.000    0.000    0.278    0.139 win32.py:18(match)
+       12    0.000    0.000    0.000    0.000 polygon.py:31(__init__)
+       62    0.000    0.000    0.000    0.000 {thread.get_ident}
+        8    0.000    0.000    0.000    0.000 abc.py:105(register)
+        1    0.000    0.000    0.000    0.000 random.py:72(Random)
+       71    0.000    0.000    0.000    0.000 {method 'add' of 'set' objects}
+       16    0.000    0.000    0.000    0.000 _weakrefset.py:83(add)
+        8    0.000    0.000    0.000    0.000 _weakrefset.py:26(__exit__)
+        1    0.000    0.000    0.000    0.000 __init__.py:942(_event_killfocus)
+        1    0.000    0.000    0.000    0.000 warnings.py:45(filterwarnings)
+        1    0.000    0.000    0.000    0.000 collections.py:26(OrderedDict)
+       12    0.000    0.000    0.000    0.000 sre_parse.py:67(__init__)
+        1    0.000    0.000    0.000    0.000 StringIO.py:30(<module>)
+        2    0.000    0.000    0.001    0.000 win32.py:228(set_vsync)
+       31    0.000    0.000    0.000    0.000 {method 'extend' of 'list' objects}
+       11    0.000    0.000    0.011    0.001 re.py:188(compile)
+        1    0.000    0.000    0.019    0.019 base.py:114(__init__)
+        3    0.000    0.000    0.000    0.000 __init__.py:97(add)
+       30    0.000    0.000    0.000    0.000 collections.py:356(<genexpr>)
+       57    0.000    0.000    0.000    0.000 {_ctypes.sizeof}
+        1    0.000    0.000    0.000    0.000 keyword.py:11(<module>)
+        2    0.000    0.000    0.001    0.000 __init__.py:299(set_vsync)
+        3    0.000    0.000    0.000    0.000 threading.py:372(notify)
+        1    0.000    0.000    0.000    0.000 {method 'findall' of '_sre.SRE_Pattern' objects}
+        1    0.000    0.000    0.000    0.000 base.py:342(on_window_close)
+        1    0.000    0.000    0.000    0.000 geos.py:228(WKTWriter)
+       13    0.000    0.000    0.000    0.000 threading.py:58(__init__)
+       19    0.000    0.000    0.000    0.000 tokenize.py:45(group)
+        2    0.000    0.000    0.000    0.000 resource.py:105(get_script_home)
+        2    0.000    0.000    0.000    0.000 __init__.py:100(remove)
+        1    0.000    0.000    0.000    0.000 base.py:107(get_gl_attributes)
+        1    0.000    0.000    0.000    0.000 atexit.py:6(<module>)
+        4    0.000    0.000    0.000    0.000 win32.py:27(__init__)
+        1    0.000    0.000    0.000    0.000 <string>:1(Traceback)
+       26    0.000    0.000    0.000    0.000 __init__.py:225(_PlatformEventHandler)
+        2    0.000    0.000    0.000    0.000 __init__.py:307(flip)
+        1    0.000    0.000    0.000    0.000 zipfile.py:709(ZipFile)
+        2    0.000    0.000    0.000    0.000 event.py:423(event)
+        1    0.000    0.000    0.000    0.000 __init__.py:1018(getLogger)
+        1    0.000    0.000    0.000    0.000 util.py:4(<module>)
+        1    0.000    0.000    0.000    0.000 threading.py:656(__init__)
+        9    0.000    0.000    0.000    0.000 {method 'update' of 'dict' objects}
+        1    0.000    0.000    0.000    0.000 <string>:1(ModuleInfo)
+        1    0.000    0.000    0.000    0.000 <string>:1(ArgSpec)
+        1    0.000    0.000    0.000    0.000 threading.py:1090(__init__)
+        4    0.000    0.000    0.001    0.000 wgl_info.py:66(have_extension)
+        4    0.000    0.000    0.000    0.000 ntpath.py:482(abspath)
+       54    0.000    0.000    0.000    0.000 {method 'release' of 'thread.lock' objects}
+        1    0.000    0.000    0.000    0.000 __init__.py:1064(_fixupParents)
+        4    0.000    0.000    0.000    0.000 impl.py:24(delegated)
+       11    0.000    0.000    0.000    0.000 {method 'setter' of 'property' objects}
+        5    0.000    0.000    0.000    0.000 abc.py:89(<genexpr>)
+        8    0.000    0.000    0.000    0.000 random.py:238(randint)
+       17    0.000    0.000    0.000    0.000 __init__.py:843(<lambda>)
+        1    0.000    0.000    0.000    0.000 point.py:15(Point)
+        1    0.000    0.000    0.000    0.000 <string>:1(ArgInfo)
+        2    0.000    0.000    0.000    0.000 base.py:255(<lambda>)
+        1    0.000    0.000    0.000    0.000 base.py:96(EventLoop)
+        1    0.000    0.000    0.000    0.000 <string>:1(Arguments)
+       11    0.000    0.000    0.000    0.000 opcode.py:31(name_op)
+        1    0.000    0.000    0.000    0.000 linestring.py:22(LineString)
+       12    0.000    0.000    0.000    0.000 {method 'indices' of 'slice' objects}
+        1    0.000    0.000    0.000    0.000 {math.exp}
+        2    0.000    0.000    0.000    0.000 __init__.py:1120(__init__)
+        3    0.000    0.000    0.000    0.000 threading.py:131(__init__)
+        2    0.000    0.000    0.000    0.000 __init__.py:94(__init__)
+        1    0.000    0.000    0.000    0.000 clock.py:227(__init__)
+        2    0.000    0.000    0.000    0.000 base.py:68(get_default_screen)
+        2    0.000    0.000    0.000    0.000 weakref.py:311(__delitem__)
+        2    0.000    0.000    0.000    0.000 __init__.py:950(_event_getminmaxinfo)
+        8    0.000    0.000    0.000    0.000 _weakrefset.py:20(__enter__)
+        1    0.000    0.000    0.000    0.000 multipoint.py:23(MultiPoint)
+        2    0.000    0.000    0.000    0.000 win32.py:187(__init__)
+        1    0.000    0.000    0.000    0.000 resource.py:267(Loader)
+       16    0.000    0.000    0.000    0.000 __init__.py:346(__init__)
+        1    0.000    0.000    0.000    0.000 weakref.py:47(__init__)
+        1    0.000    0.000    0.000    0.000 event.py:73(WindowEventLogger)
+        2    0.000    0.000    0.000    0.000 weakref.py:282(__init__)
+        1    0.000    0.000    0.000    0.000 Queue.py:26(__init__)
+       12    0.000    0.000    0.000    0.000 coords.py:61(__init__)
+        1    0.000    0.000    0.000    0.000 coords.py:35(CoordinateSequence)
+        2    0.000    0.000    0.000    0.000 ntpath.py:62(join)
+        1    0.000    0.000    0.000    0.000 __init__.py:663(__init__)
+        1    0.000    0.000    0.000    0.000 base.py:310(exit)
+        1    0.000    0.000    0.000    0.000 fnmatch.py:11(<module>)
+        1    0.000    0.000    0.000    0.000 geos.py:381(WKBWriter)
+        1    0.000    0.000    0.000    0.000 polygon.py:23(LinearRing)
+        1    0.000    0.000    0.000    0.000 win32.py:139(Win32CanvasConfigARB)
+        4    0.000    0.000    0.000    0.000 geos.py:121(<genexpr>)
+        7    0.000    0.000    0.000    0.000 __init__.py:359(_FuncPtr)
+        1    0.000    0.000    0.000    0.000 __init__.py:654(Handler)
+        1    0.000    0.000    0.000    0.000 {method 'match' of '_sre.SRE_Pattern' objects}
+        3    0.000    0.000    0.000    0.000 threading.py:113(RLock)
+        1    0.000    0.000    0.000    0.000 __init__.py:934(_event_setfocus)
+        2    0.000    0.000    0.000    0.000 base.py:282(attach)
+        1    0.000    0.000    0.000    0.000 threading.py:575(set)
+        6    0.000    0.000    0.000    0.000 {method 'pop' of 'list' objects}
+        1    0.000    0.000    0.001    0.001 geos.py:705(__init__)
+        1    0.000    0.000    0.000    0.000 types.py:244(TEXTMETRIC)
+        1    0.000    0.000    0.000    0.000 base.py:24(__init__)
+        4    0.000    0.000    0.000    0.000 base.py:102(__init__)
+        1    0.000    0.000    0.000    0.000 resource.py:282(__init__)
+        1    0.000    0.000    0.000    0.000 Queue.py:21(Queue)
+        1    0.000    0.000    0.000    0.000 base.py:28(__init__)
+        2    0.000    0.000    0.027    0.013 __init__.py:1759(get_default_display)
+        2    0.000    0.000    0.000    0.000 base.py:269(__init__)
+        1    0.000    0.000    0.000    0.000 {time.time}
+        3    0.000    0.000    0.000    0.000 weakref.py:320(__setitem__)
+        1    0.000    0.000    0.000    0.000 clock.py:201(Clock)
+        2    0.000    0.000    0.000    0.000 threading.py:560(__init__)
+       30    0.000    0.000    0.000    0.000 {method '__contains__' of 'frozenset' objects}
+        1    0.000    0.000    0.000    0.000 __init__.py:1105(Logger)
+        2    0.000    0.000    0.000    0.000 event.py:230(set_handler)
+        1    0.000    0.000    0.000    0.000 __init__.py:309(Batch)
+       30    0.000    0.000    0.000    0.000 {method 'isdigit' of 'str' objects}
+       16    0.000    0.000    0.000    0.000 {method 'values' of 'dict' objects}
+        9    0.000    0.000    0.000    0.000 _weakrefset.py:70(__contains__)
+        1    0.000    0.000    0.000    0.000 StringIO.py:42(StringIO)
+        1    0.000    0.000    0.000    0.000 types.py:279(DEVMODE)
+        1    0.000    0.000    0.000    0.000 polygon.py:187(Polygon)
+        1    0.000    0.000    0.000    0.000 __init__.py:595(Group)
+        1    0.000    0.000    6.086    6.086 __init__.py:804(_event_lbuttondown)
+        1    0.000    0.000    0.000    0.000 Queue.py:197(_init)
+        2    0.000    0.000    0.000    0.000 base.py:135(exceptNull)
+        1    0.000    0.000    0.000    0.000 proxy.py:8(CachingGeometryProxy)
+        1    0.000    0.000    0.000    0.000 __init__.py:644(_addHandlerRef)
+        1    0.000    0.000    0.001    0.001 zipfile.py:420(_ZipDecrypter)
+        1    0.000    0.000    0.000    0.000 re.py:169(findall)
+        1    0.000    0.000    0.001    0.001 geos.py:726(__init__)
+        1    0.000    0.000    0.000    0.000 gl_info.py:67(GLInfo)
+        8    0.000    0.000    0.000    0.000 _weakrefset.py:52(_commit_removals)
+        6    0.000    0.000    0.000    0.000 opcode.py:39(jabs_op)
+        2    0.000    0.000    0.000    0.000 threading.py:541(Event)
+        6    0.000    0.000    0.000    0.000 {sys._getframe}
+       12    0.000    0.000    0.000    0.000 {_sre.getlower}
+        3    0.000    0.000    0.000    0.000 __init__.py:211(_acquireLock)
+        2    0.000    0.000    0.000    0.000 base.py:245(<lambda>)
+        1    0.000    0.000    0.000    0.000 vertexdomain.py:727(IndexedVertexList)
+        4    0.000    0.000    0.000    0.000 base.py:324(__init__)
+        1    0.000    0.000    0.000    0.000 polygon.py:107(InteriorRingSequence)
+        8    0.000    0.000    0.000    0.000 _weakrefset.py:16(__init__)
+        2    0.000    0.000    0.000    0.000 inspect.py:236(isroutine)
+        1    0.000    0.000    0.000    0.000 win32.py:92(start)
+        1    0.000    0.000    0.000    0.000 vertexbuffer.py:120(AbstractBuffer)
+        1    0.000    0.000    0.000    0.000 win32.py:177(create_context)
+        1    0.000    0.000    0.000    0.000 collection.py:8(GeometryCollection)
+        6    0.000    0.000    0.000    0.000 opcode.py:35(jrel_op)
+        1    0.000    0.000    0.000    0.000 base.py:8(Config)
+        1    0.000    0.000    0.000    0.000 win32.py:133(create_context)
+        1    0.000    0.000    0.000    0.000 threading.py:551(_Event)
+        1    0.000    0.000    0.000    0.000 io.py:69(IOBase)
+        3    0.000    0.000    0.000    0.000 ntpath.py:212(dirname)
+        2    0.000    0.000    0.278    0.139 base.py:132(get_best_config)
+        1    0.000    0.000    0.000    0.000 base.py:211(Context)
+        1    0.000    0.000    8.291    8.291 __init__.py:135(run)
+        1    0.000    0.000    0.000    0.000 vertexdomain.py:599(IndexedVertexDomain)
+        1    0.000    0.000    0.000    0.000 __init__.py:1587(FPSDisplay)
+        3    0.000    0.000    0.000    0.000 __init__.py:183(_checkLevel)
+        1    0.000    0.000    0.000    0.000 __init__.py:897(_event_syscommand)
+        1    0.000    0.000    0.000    0.000 random.py:655(WichmannHill)
+        1    0.000    0.000    0.000    0.000 vertexbuffer.py:232(VertexArray)
+        1    0.000    0.000    0.010    0.010 __init__.py:847(_event_close)
+        1    0.000    0.000    0.000    0.000 types.py:86(SECURITY_ATTRIBUTES)
+        1    0.000    0.000    0.000    0.000 types.py:72(WNDCLASS)
+        1    0.000    0.000    0.000    0.000 vertexbuffer.py:281(VertexBufferObject)
+        3    0.000    0.000    0.000    0.000 __init__.py:220(_releaseLock)
+        1    0.000    0.000    0.000    0.000 zipfile.py:262(ZipInfo)
+        2    0.000    0.000    0.000    0.000 atexit.py:37(register)
+        1    0.000    0.000    0.000    0.000 Queue.py:212(PriorityQueue)
+        1    0.000    0.000    0.000    0.000 win32.py:48(Win32EventLoop)
+        1    0.000    0.000    0.000    0.000 multipolygon.py:19(MultiPolygon)
+        1    0.000    0.000    0.000    0.000 collections.py:390(Counter)
+        1    0.000    0.000    0.000    0.000 vertexdomain.py:149(VertexDomain)
+        1    0.000    0.000    0.000    0.000 allocation.py:88(Allocator)
+        1    0.000    0.000    0.000    0.000 os.py:421(__setitem__)
+        1    0.000    0.000    0.000    0.000 types.py:94(PIXELFORMATDESCRIPTOR)
+        1    0.000    0.000    0.000    0.000 event.py:152(EventDispatcher)
+        2    0.000    0.000    0.000    0.000 base.py:264(<lambda>)
+        2    0.000    0.000    0.000    0.000 __init__.py:758(draw_mouse_cursor)
+        1    0.000    0.000    0.001    0.001 geos.py:677(__init__)
+        1    0.000    0.000    0.000    0.000 point.py:147(PointAdapter)
+        1    0.000    0.000    0.001    0.001 geos.py:687(__init__)
+        1    0.000    0.000    0.000    0.000 linestring.py:142(LineStringAdapter)
+        1    0.000    0.000    0.000    0.000 vertexattribute.py:264(AbstractAttribute)
+        7    0.000    0.000    0.000    0.000 __future__.py:75(__init__)
+       10    0.000    0.000    0.000    0.000 gl_info.py:171(get_renderer)
+        1    0.000    0.000    0.003    0.003 random.py:91(__init__)
+        1    0.000    0.000    0.001    0.001 __init__.py:810(_event_lbuttonup)
+        1    0.000    0.000    0.000    0.000 __init__.py:332(CDLL)
+        2    0.000    0.000    0.000    0.000 inspect.py:227(isbuiltin)
+        1    0.000    0.000    0.000    0.000 impl.py:39(__init__)
+        1    0.000    0.000    0.000    0.000 multilinestring.py:19(MultiLineString)
+        1    0.000    0.000    0.000    0.000 pprint.py:84(PrettyPrinter)
+        1    0.000    0.000    0.000    0.000 __init__.py:353(Formatter)
+        3    0.000    0.000    0.000    0.000 impl.py:41(update)
+        1    0.000    0.000    0.000    0.000 __init__.py:1394(LoggerAdapter)
+        1    0.000    0.000    0.000    0.000 types.py:164(BITMAPV5HEADER)
+        1    0.000    0.000    0.000    0.000 __init__.py:1386(__init__)
+        1    0.000    0.000    0.000    0.000 objects.py:54(ImmovableRectangle)
+       10    0.000    0.000    0.000    0.000 __init__.py:249(_ViewEventHandler)
+        1    0.000    0.000    0.000    0.000 __init__.py:41(RoomArranger)
+        4    0.000    0.000    0.000    0.000 {method 'lstrip' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 random.py:805(SystemRandom)
+        3    0.000    0.000    0.000    0.000 __init__.py:494(CFunctionType)
+        5    0.000    0.000    0.000    0.000 {method 'group' of '_sre.SRE_Match' objects}
+        8    0.000    0.000    0.000    0.000 {method '__subclasshook__' of 'object' objects}
+        1    0.000    0.000    0.000    0.000 wintypes.py:100(RECT)
+        1    0.000    0.000    0.000    0.000 threading.py:124(_RLock)
+        1    0.000    0.000    0.000    0.000 base.py:8(Display)
+        1    0.000    0.000    0.000    0.000 __init__.py:661(TextureGroup)
+        2    0.000    0.000    0.000    0.000 threading.py:237(_is_owned)
+        1    0.000    0.000    0.000    0.000 {binascii.a2b_hex}
+        1    0.000    0.000    0.000    0.000 glu_info.py:68(GLUInfo)
+        1    0.000    0.000    0.000    0.000 lib.py:86(LibraryLoader)
+        1    0.000    0.000    0.000    0.000 threading.py:589(clear)
+        1    0.000    0.000    0.000    0.000 mouse.py:36(<module>)
+        1    0.000    0.000    0.000    0.000 {_hashlib.openssl_md5}
+        1    0.000    0.000    0.000    0.000 __init__.py:1560(getLogger)
+        1    0.000    0.000    0.000    0.000 threading.py:254(_Condition)
+        1    0.000    0.000    0.000    0.000 __init__.py:1291(addHandler)
+        1    0.000    0.000    0.000    0.000 base.py:19(PlatformEventLoop)
+        2    0.000    0.000    0.000    0.000 base.py:180(_least_squares)
+        1    0.000    0.000    0.000    0.000 resource.py:717(_DefaultLoader)
+        1    0.000    0.000    0.000    0.000 multipoint.py:126(MultiPointAdapter)
+        1    0.000    0.000    0.000    0.000 polygon.py:84(LinearRingAdapter)
+        1    0.000    0.000    0.000    0.000 __init__.py:87(WeakSet)
+        1    0.000    0.000    0.000    0.000 base.py:205(__init__)
+        1    0.000    0.000    0.000    0.000 clock.py:865(ClockDisplay)
+        1    0.000    0.000    0.000    0.000 types.py:124(RGBQUAD)
+        1    0.000    0.000    0.000    0.000 multipolygon.py:108(MultiPolygonAdapter)
+        1    0.000    0.000    0.000    0.000 vertexbuffer.py:480(IndirectArrayRegion)
+        1    0.000    0.000    0.000    0.000 types.py:149(BITMAPINFOHEADER)
+        4    0.000    0.000    0.000    0.000 geos.py:122(<genexpr>)
+        1    0.000    0.000    0.000    0.000 __init__.py:82(Win32MouseCursor)
+        1    0.000    0.000    0.000    0.000 win32.py:173(compatible)
+        1    0.000    0.000    0.000    0.000 UserDict.py:4(__init__)
+        1    0.000    0.000    0.000    0.000 {_ctypes.set_conversion_mode}
+        2    0.000    0.000    0.000    0.000 {method 'rfind' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 ntpath.py:42(normcase)
+        1    0.000    0.000    0.000    0.000 __init__.py:1725(Platform)
+        1    0.000    0.000    0.000    0.000 __init__.py:501(BufferingFormatter)
+        1    0.000    0.000    0.000    0.000 cga.py:2(<module>)
+        1    0.000    0.000    0.000    0.000 threading.py:789(_set_ident)
+        1    0.000    0.000    0.000    0.000 __init__.py:231(LogRecord)
+        1    0.000    0.000    0.000    0.000 types.py:141(CIEXYZTRIPLE)
+        1    0.000    0.000    0.000    0.000 __init__.py:700(OrderedGroup)
+        2    0.000    0.000    0.000    0.000 {math.log}
+        1    0.000    0.000    0.000    0.000 __init__.py:159(py_object)
+        1    0.000    0.000    0.000    0.000 __init__.py:343(_ModuleProxy)
+        1    0.000    0.000    0.000    0.000 threading.py:399(notifyAll)
+        1    0.000    0.000    0.000    0.000 win32.py:186(Win32Context)
+        1    0.000    0.000    0.000    0.000 base.py:100(_requires_gl_3)
+        1    0.000    0.000    0.000    0.000 lib.py:60(_TraceFunction)
+        2    0.000    0.000    0.000    0.000 __init__.py:1714(get_platform)
+        1    0.000    0.000    0.000    0.000 gl_info.py:109(remove_active_context)
+        1    0.000    0.000    0.000    0.000 types.py:133(CIEXYZ)
+        1    0.000    0.000    0.000    0.000 __init__.py:692(createLock)
+        1    0.000    0.000    0.000    0.000 __init__.py:852(_event_paint)
+        1    0.000    0.000    0.000    0.000 vertexattribute.py:375(ColorAttribute)
+        1    0.000    0.000    0.000    0.000 base.py:83(Screen)
+        1    0.000    0.000    0.000    0.000 types.py:318(ICONINFO)
+        3    0.000    0.000    0.000    0.000 __init__.py:585(__init__)
+        1    0.000    0.000    0.000    0.000 __init__.py:580(Filterer)
+        1    0.000    0.000    0.000    0.000 base.py:165(CanvasConfig)
+        4    0.000    0.000    0.000    0.000 __init__.py:429(__init__)
+        1    0.000    0.000    0.000    0.000 types.py:217(TRACKMOUSEEVENT)
+        1    0.000    0.000    0.000    0.000 geos.py:198(WKTReader)
+        3    0.000    0.000    0.000    0.000 __init__.py:51(<lambda>)
+        1    0.000    0.000    0.000    0.000 types.py:226(MINMAXINFO)
+        1    0.000    0.000    0.000    0.000 tokenize.py:46(any)
+        1    0.000    0.000    0.000    0.000 io.py:76(BufferedIOBase)
+        1    0.000    0.000    0.000    0.000 threading.py:299(_is_owned)
+        1    0.000    0.000    0.000    0.000 vertexattribute.py:423(NormalAttribute)
+        1    0.000    0.000    0.000    0.000 __init__.py:962(__init__)
+        1    0.000    0.000    0.000    0.000 __init__.py:243(c_char_p)
+        1    0.000    0.000    0.000    0.000 vertexattribute.py:408(FogCoordAttribute)
+        1    0.000    0.000    0.000    0.000 __init__.py:397(__init__)
+        1    0.000    0.000    0.000    0.000 proxy.py:41(PolygonProxy)
+        1    0.000    0.000    0.000    0.000 vertexattribute.py:440(SecondaryColorAttribute)
+        1    0.000    0.000    0.000    0.000 lib.py:75(c_void)
+        8    0.000    0.000    0.000    0.000 {method '__subclasses__' of 'type' objects}
+        1    0.000    0.000    0.000    0.000 wgl.py:189(struct_tagLAYERPLANEDESCRIPTOR)
+        1    0.000    0.000    0.000    0.000 __init__.py:818(StreamHandler)
+        1    0.000    0.000    0.000    0.000 __init__.py:428(LibraryLoader)
+        1    0.000    0.000    0.000    0.000 lib.py:272(LinuxLibraryLoader)
+        1    0.000    0.000    0.000    0.000 __init__.py:84(AppException)
+        1    0.000    0.000    0.000    0.000 geos.py:339(WKBReader)
+        1    0.000    0.000    0.000    0.000 vertexattribute.py:456(TexCoordAttribute)
+        1    0.000    0.000    0.000    0.000 vertexbuffer.py:204(AbstractMappable)
+        1    0.000    0.000    0.000    0.000 wgl.py:321(struct_tagRECT)
+        1    0.000    0.000    0.000    0.000 wintypes.py:114(_COORD)
+        1    0.000    0.000    0.000    0.000 key.py:66(KeyStateHandler)
+        1    0.000    0.000    0.000    0.000 __init__.py:1008(__init__)
+        1    0.000    0.000    0.000    0.000 allocation.py:76(AllocatorMemoryException)
+        1    0.000    0.000    0.000    0.000 __future__.py:74(_Feature)
+        1    0.000    0.000    0.000    0.000 polygon.py:306(PolygonAdapter)
+        1    0.000    0.000    0.000    0.000 wglext_arb.py:325(struct__GPU_DEVICE)
+        1    0.000    0.000    0.000    0.000 wgl.py:150(struct__POINTFLOAT)
+        1    0.000    0.000    0.000    0.000 win32.py:82(_recreate_wait_objects_array)
+        1    0.000    0.000    0.000    0.000 topology.py:13(Validating)
+        1    0.000    0.000    0.000    0.000 win32.py:129(compatible)
+        2    0.000    0.000    0.000    0.000 tokenize.py:47(maybe)
+        1    0.000    0.000    0.000    0.000 __init__.py:419(OleDLL)
+        1    0.000    0.000    0.000    0.000 win32.py:17(Win32Config)
+        1    0.000    0.000    0.000    0.000 __init__.py:110(__len__)
+        1    0.000    0.000    0.000    0.000 wintypes.py:136(MSG)
+        1    0.000    0.000    0.000    0.000 __init__.py:961(_event_erasebkgnd)
+        1    0.000    0.000    0.000    0.000 base.py:269(ScreenMode)
+        1    0.000    0.000    0.000    0.000 multilinestring.py:86(MultiLineStringAdapter)
+        1    0.000    0.000    0.000    0.000 __init__.py:889(FileHandler)
+        2    0.000    0.000    0.000    0.000 inspect.py:142(isfunction)
+        1    0.000    0.000    0.000    0.000 win32.py:24(Win32Screen)
+        1    0.000    0.000    0.000    0.000 win32.py:233(__init__)
+        1    0.000    0.000    0.000    0.000 coords.py:179(BoundsOp)
+        1    0.000    0.000    0.000    0.000 lib_wgl.py:70(WGLFunctionProxy)
+        1    0.000    0.000    0.000    0.000 threading.py:422(_Semaphore)
+        1    0.000    0.000    0.000    0.000 __init__.py:1003(Manager)
+        1    0.000    0.000    0.000    0.000 Queue.py:17(Full)
+        2    0.000    0.000    0.000    0.000 {method 'lower' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 base.py:798(HeterogeneousGeometrySequence)
+        1    0.000    0.000    0.000    0.000 base.py:289(detach)
+        1    0.000    0.000    0.000    0.000 __init__.py:388(PyDLL)
+        1    0.000    0.000    0.000    0.000 ctypes_declarations.py:13(allocated_c_char_p)
+        1    0.000    0.000    0.000    0.000 threading.py:1058(_Timer)
+        1    0.000    0.000    0.000    0.000 geos.py:505(__init__)
+        1    0.000    0.000    0.000    0.000 geos.py:498(LGEOSBase)
+        1    0.000    0.000    0.000    0.000 clock.py:448(set_fps_limit)
+        1    0.000    0.000    0.000    0.000 win32.py:104(Win32CanvasConfig)
+        1    0.000    0.000    0.000    0.000 UserDict.py:17(__len__)
+        1    0.000    0.000    0.000    0.000 event.py:48(WindowExitHandler)
+        1    0.000    0.000    0.000    0.000 types.py:236(ABC)
+        2    0.000    0.000    0.000    0.000 {method 'from_address' of '_ctypes.PyCStructType' objects}
+        1    0.000    0.000    0.000    0.000 objects.py:13(Rectangle)
+        1    0.000    0.000    0.000    0.000 vertexattribute.py:391(EdgeFlagAttribute)
+        1    0.000    0.000    0.000    0.000 Queue.py:231(LifoQueue)
+        1    0.000    0.000    0.000    0.000 clock.py:177(_ScheduledItem)
+        1    0.000    0.000    0.000    0.000 vertexattribute.py:496(VertexAttribute)
+        1    0.000    0.000    0.000    0.000 __init__.py:163(MouseCursor)
+        1    0.000    0.000    0.000    0.000 __init__.py:129(ContextException)
+        1    0.000    0.000    0.000    0.000 base.py:93(stop)
+        1    0.000    0.000    0.000    0.000 tokenize.py:179(Untokenizer)
+        1    0.000    0.000    0.000    0.000 vertexbuffer.py:471(VertexArrayRegion)
+        1    0.000    0.000    0.000    0.000 __init__.py:180(c_ulong)
+        1    0.000    0.000    0.000    0.000 {_hashlib.openssl_sha1}
+        1    0.000    0.000    0.000    0.000 linref.py:21(InterpolateOp)
+        1    0.000    0.000    0.000    0.000 topology.py:24(BinaryRealProperty)
+        1    0.000    0.000    0.000    0.000 __init__.py:145(NoSuchDisplayException)
+        1    0.000    0.000    0.000    0.000 event.py:147(EventException)
+        1    0.000    0.000    0.000    0.000 __init__.py:406(HRESULT)
+        1    0.000    0.000    0.000    0.000 {_hashlib.openssl_sha256}
+        1    0.000    0.000    0.000    0.000 wintypes.py:118(POINT)
+        1    0.000    0.000    0.000    0.000 win32.py:232(Win32ARBContext)
+        1    0.000    0.000    0.000    0.000 wgl.py:304(struct__WGLSWAP)
+        1    0.000    0.000    0.000    0.000 __init__.py:603(__init__)
+        1    0.000    0.000    0.000    0.000 __init__.py:294(c_wchar)
+        1    0.000    0.000    0.000    0.000 {_hashlib.openssl_sha224}
+        1    0.000    0.000    0.000    0.000 topology.py:56(UnaryTopologicalOp)
+        1    0.000    0.000    0.000    0.000 __init__.py:208(_choose_darwin_platform)
+        1    0.000    0.000    0.000    0.000 glext_arb.py:7093(struct__cl_context)
+        1    0.000    0.000    0.000    0.000 _endian.py:26(_swapped_meta)
+        1    0.000    0.000    0.000    0.000 __init__.py:226(c_ubyte)
+        1    0.000    0.000    0.000    0.000 clock.py:710(get_default)
+        1    0.000    0.000    0.000    0.000 glext_arb.py:7131(struct__cl_event)
+        1    0.000    0.000    0.000    0.000 zipfile.py:1357(PyZipFile)
+        1    0.000    0.000    0.000    0.000 base.py:204(ObjectSpace)
+        1    0.000    0.000    0.000    0.000 vertexattribute.py:515(GenericAttribute)
+        1    0.000    0.000    0.000    0.000 __init__.py:956(PlaceHolder)
+        1    0.000    0.000    0.000    0.000 __init__.py:154(NoSuchScreenModeException)
+        2    0.000    0.000    0.000    0.000 base.py:200(is_complete)
+        1    0.000    0.000    0.000    0.000 zipfile.py:24(LargeZipFile)
+        1    0.000    0.000    0.000    0.000 shutil.py:34(SpecialFileError)
+        1    0.000    0.000    0.000    0.000 wgl_info.py:52(WGLInfoException)
+        4    0.000    0.000    0.000    0.000 {id}
+        1    0.000    0.000    0.000    0.000 threading.py:56(_Verbose)
+        3    0.000    0.000    0.000    0.000 {method 'clear' of 'dict' objects}
+        1    0.000    0.000    0.000    0.000 glext_arb.py:7100(struct__cl_event)
+        1    0.000    0.000    0.000    0.000 geos.py:720(LGEOS340)
+        1    0.000    0.000    0.000    0.000 __init__.py:197(c_float)
+        1    0.000    0.000    0.000    0.000 __init__.py:191(ImageMouseCursor)
+        1    0.000    0.000    0.000    0.000 resource.py:204(FileLocation)
+        1    0.000    0.000    0.000    0.000 threading.py:514(_BoundedSemaphore)
+        1    0.000    0.000    0.000    0.000 zipfile.py:20(BadZipfile)
+        1    0.000    0.000    0.000    0.000 linref.py:7(LinearRefBase)
+        1    0.000    0.000    0.000    0.000 {method 'update' of 'set' objects}
+        1    0.000    0.000    0.000    0.000 win32.py:87(Win32ScreenMode)
+        1    0.000    0.000    0.000    0.000 tokenize.py:148(StopTokenizing)
+        1    0.000    0.000    0.000    0.000 __init__.py:159(MouseCursorException)
+        1    0.000    0.000    0.000    0.000 topology.py:32(UnaryRealProperty)
+        1    0.000    0.000    0.000    0.000 impl.py:38(BaseImpl)
+        1    0.000    0.000    0.000    0.000 topology.py:39(BinaryTopologicalOp)
+        2    0.000    0.000    0.000    0.000 __init__.py:828(<lambda>)
+        1    0.000    0.000    0.000    0.000 __init__.py:1682(NullHandler)
+        1    0.000    0.000    0.000    0.000 glu.py:207(struct_GLUnurbs)
+        1    0.000    0.000    0.000    0.000 vertexattribute.py:479(MultiTexCoordAttribute)
+        1    0.000    0.000    0.000    0.000 vertexbuffer.py:439(AbstractBufferRegion)
+        8    0.000    0.000    0.000    0.000 {method 'remove' of 'set' objects}
+        1    0.000    0.000    0.000    0.000 wintypes.py:23(VARIANT_BOOL)
+        1    0.000    0.000    0.000    0.000 impl.py:48(GEOSImpl)
+        1    0.000    0.000    0.000    0.000 win32.py:96(Win32Canvas)
+        1    0.000    0.000    0.000    0.000 glext_arb.py:3939(struct___GLsync)
+        1    0.000    0.000    0.000    0.000 topology.py:20(Delegating)
+        1    0.000    0.000    0.000    0.000 shutil.py:31(Error)
+        1    0.000    0.000    0.000    0.000 io.py:79(TextIOBase)
+        1    0.000    0.000    0.000    0.000 objects.py:47(MovableRectangle)
+        1    0.000    0.000    0.000    0.000 wintypes.py:107(_SMALL_RECT)
+        1    0.000    0.000    0.000    0.000 geos.py:681(LGEOS320)
+        1    0.000    0.000    0.000    0.000 threading.py:1128(_DummyThread)
+        1    0.000    0.000    0.000    0.000 resource.py:721(_set_path)
+        1    0.000    0.000    0.000    0.000 glext_arb.py:7117(struct__cl_event)
+        1    0.000    0.000    0.000    0.000 wintypes.py:123(SIZE)
+        1    0.000    0.000    0.000    0.000 predicates.py:13(RelateOp)
+        1    0.000    0.000    0.000    0.000 base.py:145(CAP_STYLE)
+        1    0.000    0.000    0.000    0.000 __init__.py:140(WindowException)
+        1    0.000    0.000    0.000    0.000 __init__.py:253(_WindowMetaclass)
+        1    0.000    0.000    0.000    0.000 io.py:73(RawIOBase)
+        1    0.000    0.000    0.000    0.000 lib.py:51(MissingFunctionException)
+        1    0.000    0.000    0.000    0.000 glext_arb.py:7110(struct__cl_context)
+        1    0.000    0.000    0.000    0.000 __init__.py:132(ConfigException)
+        1    0.000    0.000    0.000    0.000 __init__.py:168(c_short)
+        1    0.000    0.000    0.000    0.000 geos.py:169(DimensionError)
+        1    0.000    0.000    0.000    0.000 resource.py:181(Location)
+        1    0.000    0.000    0.000    0.000 geos.py:671(LGEOS311)
+        1    0.000    0.000    0.000    0.000 wgl.py:162(struct__GLYPHMETRICSFLOAT)
+        1    0.000    0.000    0.000    0.000 Queue.py:13(Empty)
+        1    0.000    0.000    0.000    0.000 glext_arb.py:3946(struct___GLsync)
+        1    0.000    0.000    0.000    0.000 resource.py:219(ZIPLocation)
+        1    0.000    0.000    0.000    0.000 __init__.py:255(c_void_p)
+        1    0.000    0.000    0.000    0.000 base.py:316(Canvas)
+        1    0.000    0.000    0.000    0.000 __init__.py:649(NullGroup)
+        1    0.000    0.000    0.000    0.000 glu.py:229(struct_GLUquadric)
+        1    0.000    0.000    0.000    0.000 __init__.py:201(c_double)
+        1    0.000    0.000    0.000    0.000 __init__.py:1380(RootLogger)
+        1    0.000    0.000    0.000    0.000 __init__.py:149(NoSuchConfigException)
+        1    0.000    0.000    0.000    0.000 threading.py:1088(_MainThread)
+        1    0.000    0.000    0.000    0.000 __init__.py:238(c_char)
+        1    0.000    0.000    0.000    0.000 lib.py:154(MachOLibraryLoader)
+        1    0.000    0.000    0.000    0.000 resource.py:98(ResourceNotFoundException)
+        1    0.000    0.000    0.000    0.000 resource.py:245(URLLocation)
+        1    0.000    0.000    0.000    0.000 _endian.py:49(BigEndianStructure)
+        1    0.000    0.000    0.000    0.000 __init__.py:205(c_longdouble)
+        1    0.000    0.000    0.000    0.000 clock.py:155(_ClockBase)
+        1    0.000    0.000    0.000    0.000 predicates.py:7(BinaryPredicate)
+        1    0.000    0.000    0.000    0.000 glu.py:214(struct_GLUnurbs)
+        1    0.000    0.000    0.000    0.000 wgl_info.py:55(WGLInfo)
+        1    0.000    0.000    0.000    0.000 {_hashlib.openssl_sha384}
+        1    0.000    0.000    0.000    0.000 __init__.py:397(WinDLL)
+        1    0.000    0.000    0.000    0.000 wintypes.py:131(FILETIME)
+        1    0.000    0.000    0.000    0.000 {_hashlib.openssl_sha512}
+        1    0.000    0.000    0.000    0.000 geos.py:517(LGEOS300)
+        1    0.000    0.000    0.000    0.000 geos.py:586(LGEOS310)
+        1    0.000    0.000    0.000    0.000 __init__.py:187(DefaultMouseCursor)
+        1    0.000    0.000    0.000    0.000 wglext_arb.py:335(struct_tagRECT)
+        1    0.000    0.000    0.000    0.000 __init__.py:176(c_long)
+        1    0.000    0.000    0.000    0.000 threading.py:1097(_set_daemon)
+        1    0.000    0.000    0.000    0.000 vertexbuffer.py:458(VertexBufferObjectRegion)
+        1    0.000    0.000    0.000    0.000 win32.py:10(Win32Display)
+        1    0.000    0.000    0.000    0.000 inspect.py:632(BlockFinder)
+        1    0.000    0.000    0.000    0.000 linref.py:15(ProjectOp)
+        1    0.000    0.000    0.000    0.000 __init__.py:969(_event_erasebkgnd_view)
+        1    0.000    0.000    0.000    0.000 geos.py:26(NullHandler)
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+        1    0.000    0.000    0.000    0.000 __init__.py:543(Filter)
+        1    0.000    0.000    0.000    0.000 clock.py:184(_ScheduledIntervalItem)
+        1    0.000    0.000    0.000    0.000 geos.py:173(TopologicalError)
+        1    0.000    0.000    0.000    0.000 lib.py:76(_TraceLibrary)
+        1    0.000    0.000    0.000    0.000 __init__.py:291(c_wchar_p)
+        1    0.000    0.000    0.000    0.000 glu.py:222(struct_GLUquadric)
+        1    0.000    0.000    0.000    0.000 glu.py:237(struct_GLUtesselator)
+        1    0.000    0.000    0.000    0.000 base.py:151(JOIN_STYLE)
+        1    0.000    0.000    0.000    0.000 geos.py:699(LGEOS330)
+        1    0.000    0.000    0.000    0.000 __init__.py:233(c_byte)
+        1    0.000    0.000    0.000    0.000 predicates.py:19(UnaryPredicate)
+        1    0.000    0.000    0.000    0.000 shutil.py:38(ExecError)
+        1    0.000    0.000    0.000    0.000 cga.py:11(is_ccw_impl)
+        1    0.000    0.000    0.000    0.000 __init__.py:172(c_ushort)
+        1    0.000    0.000    0.000    0.000 lib.py:81(GLException)
+        1    0.000    0.000    0.000    0.000 geos.py:165(ReadingError)
+        1    0.000    0.000    0.000    0.000 tokenize.py:146(TokenError)
+        1    0.000    0.000    0.000    0.000 __init__.py:215(c_longlong)
+        1    0.000    0.000    0.000    0.000 glext_arb.py:7124(struct__cl_context)
+        1    0.000    0.000    0.000    0.000 coords.py:181(__init__)
+        1    0.000    0.000    0.000    0.000 __init__.py:219(c_ulonglong)
+        1    0.000    0.000    0.000    0.000 inspect.py:630(EndOfBlock)
+        1    0.000    0.000    0.000    0.000 geos.py:177(PredicateError)
+        1    0.000    0.000    0.000    0.000 __init__.py:260(c_bool)
+        1    0.000    0.000    0.000    0.000 glu.py:244(struct_GLUtesselator)
+
+
