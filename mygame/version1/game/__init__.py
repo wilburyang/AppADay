@@ -87,6 +87,15 @@ ra = RoomArranger()
 
 window = pyglet.window.Window(ROOM_WIDTH * 10, ROOM_HEIGHT * 10)
 
+def randomize_furniture(furniture):
+  new_furniture = []
+  for rectangle in furniture:
+    if rectangle.isMovable():
+      new_furniture.append(MovableRectangle(random.randint(0, ROOM_WIDTH), random.randint(0, ROOM_HEIGHT), rectangle.width, rectangle.height, random.uniform(0, 3.1415926)))
+    else:
+      new_furniture.append(ImmovableRectangle(rectangle.x, rectangle.y, rectangle.width, rectangle.height, rectangle.rotation))
+  return new_furniture
+
 @window.event
 def on_draw():
   pyglet.gl.glClearColor(240,0,0,255)
@@ -108,10 +117,11 @@ def on_draw():
 @window.event
 def on_mouse_press(x, y, button, modifiers):
   if button == mouse.LEFT:
-    ra.find_good_arrangement()
+    ra.furniture = randomize_furniture(ra.furniture)
+    #ra.find_good_arrangement()
     #ra.furniture = ra.get_mutated_furniture()
     #print fitness(ra.furniture)
-    #ra.show_arrangement()
+    ra.show_arrangement()
 
 if __name__ == '__main__':
   pyglet.app.run()
