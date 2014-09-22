@@ -34,23 +34,26 @@ class Rectangle(Polygon):
     self.rotation += random.uniform(-0.1, 0.1)
     self.__init__(self.x, self.y, self.width, self.height, self.rotation)
 
-  def setx(self, x):
-    self.x = x
+  def mutatedCopy(self):
+    if self.isMovable():
+      return MovableRectangle(self.x + random.uniform(-10, 10), self.y + random.uniform(-10, 10), self.width, self.height, self.rotation + random.uniform(-0.1, 0.1))
+    else:
+      return MovableRectangle(self.x + random.uniform(-10, 10), self.y + random.uniform(-10, 10), self.width, self.height, self.rotation + random.uniform(-0.1, 0.1))
 
   def isMovable(self):
     # to be implemented in subclasses
     raise NotImplementedError
 
 class MovableRectangle(Rectangle):
-  def __init__(self):
-    super(self)
+  def __init__(self, x, y, width, height, rotation):
+    Rectangle.__init__(self, x, y, width, height, rotation)
 
   def isMovable(self):
     return True
 
 class ImmovableRectangle(Rectangle):
-  def __init__(self):
-    super(self)
+  def __init__(self, x, y, width, height, rotation):
+    Rectangle.__init__(self, x, y, width, height, rotation)
 
   def isMovable(self):
     return False
