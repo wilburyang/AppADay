@@ -3,7 +3,7 @@ body {
 }
 
 #super-container {
-  width: 1000px;
+  width: 870px;
   margin: 100px auto 0 auto;
 }
 
@@ -45,14 +45,12 @@ iframe {
 
 h2 {
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
-  letter-spacing: -1px;
+  font-family: 'Oswald', sans-serif;
 }
 
 h1 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Oswald', sans-serif;
   color: #ddd;
-  letter-spacing: -1px;
 }
 
 a.overlay-link {
