@@ -1,0 +1,151 @@
+<!doctype html>
+
+<html>
+
+  <head>
+
+  <style type = "text/css">
+  body {
+    padding: 0;
+    margin: 0;
+    background-color: black;
+  }
+  </style>
+
+
+    <script type="text/javascript">
+      var PI = 3.1415926
+      function resizeCanvas() {
+        canvas = document.getElementById("canvas");
+        canvas.width = window.innerWidth - 4;
+        canvas.height = window.innerHeight - 4;
+      }
+
+      function updateDisplay() {
+
+        var canvas = document.getElementById("canvas");
+        resizeCanvas();
+        var context = canvas.getContext("2d");
+
+
+        context.fillStyle = "black"; //black
+        var width = window.innerWidth;
+        var height = window.innerHeight;
+        var xCenter = width / 2;
+        var yCenter = height / 2;
+
+        context.fillRect(0, 0, width, height);
+
+
+        var text = document.getElementById("text");
+        var a = Math.random() - 0.5;
+        var b = Math.random() - 0.5;
+        var c = Math.random() - 0.5;
+        var n = Math.sqrt(a * a + b * b + c * c);
+        a = a / n;
+        b = b / n;
+        c = c / n;
+        d = Math.random() - 0.5;
+        d *= 0.3;
+
+        // This is our x axis
+        var a2 = b;
+        var b2 = -a;
+        var c2 = 0;
+
+        if (a2 == 0 && b2 == 0) {
+          a2 = 1;
+          b2 = 0;
+          c2 = 0;
+        }
+
+        // This is our y axis
+        var a4 = b * c2 - c * b2;
+        var b4 = c * a2 - a * c2;
+        var c4 = a * b2 - b * a2;
+
+/*
+        context.fillStyle = "white";
+        context.font = "bold 40px sans-serif";
+        context.textAlign = "center";
+        context.textBaseline = "middle";
+        context.fillText("a: " + a + "b: " + b + "c: " + c, xCenter, 100);
+        context.fillText("a2: " + a2 + "b2: " + b2 + "c2: " + c2, xCenter, 200);
+        context.fillText("a4: " + a4 + "b4: " + b4 + "c4: " + c4, xCenter, 300);*/
+
+        for (var r = 0; r < 1; r += 0.01) {
+          for (var theta = 0; theta < 2 * PI; theta += 0.01) {
+            var x = Math.cos(theta);
+            var y = Math.sin(theta);
+            var a3 = r * (x * a4 + y * a2)+ d * a;
+            var b3 = r * (x * b4 + y * b2)+ d * b;
+            var c3 = r * (x * c4 + y * c2)+ d * c;
+
+
+            var red = 0.5 + a3;
+            var green = 0.5 + b3;
+            var blue = 0.5 + c3;
+
+            red *= 255;
+            green *= 255;
+            blue *= 255;
+
+            red = Math.floor(red);
+            blue = Math.floor(blue);
+            green = Math.floor(green);
+            
+            var cropping = "crop";
+            if (cropping == "crop") {
+              if (red < 0||blue < 0||green < 0||red > 255||blue > 255||green > 255) {
+                red = 0;
+                blue = 0;
+                green = 0;
+              }
+            } else if (cropping == "limit") {
+              if (red < 0) red = 0;
+              if (blue < 0) blue = 0;
+              if (green < 0) green = 0;
+
+              if (red > 255) red = 255;
+              if (blue > 255) blue = 255;
+              if (green > 255) green = 255;
+            } else if (cropping == "wrap") {
+              red %= 256;
+              green %= 256;
+              blue %=256;
+              if (red < 0) red += 256;
+              if (green < 0) green += 256;
+              if (blue < 0) blue += 256;
+            } else if (cropping == "kaleidoscope") {
+              red %= 512;
+              green %=512;
+              blue %= 512;
+              if (red < 0) red += 512;
+              if (green < 0) green += 512;
+              if (blue < 0) blue += 512;
+              if (red > 255) red = 511 - red;
+              if (green > 255) green = 511 - green;
+              if (blue > 255) blue = 511 - blue;
+
+            }
+
+            
+
+            context.fillStyle = "rgb(" + red + "," + green+", "+blue+")";
+            //context.strokeStyle = "rgb(255, 255, 255)";
+            //context.strokeStyle = "white";
+            context.beginPath();
+            context.arc(xCenter + 300 * r * x, yCenter + 300 * r * y, 4, 0, 2 * PI, false);
+            context.fill();
+          }
+        }
+      }
+    </script>
+  </head>
+
+
+  <body onLoad = "updateDisplay()">
+    <canvas id="canvas"></canvas>
+  </body>
+
+</html>
