@@ -5,43 +5,109 @@
 <head>
   <script src='https://cdn.firebase.com/js/client/1.0.15/firebase.js'></script>
   <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js'></script>
+  <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
   <style type="text/css">
     body {
-      background-color: white;
+      background-color: black;
+      background-image: url("3/cow2.png");
+      background-repeat: repeat;
+    }
+    * {
+      word-wrap: break-word;
+    }
+    #title-container {
+      top: 0;
+      height: 150px;
+    }
+    #title {
+      color: white;
+      position: relative;
+      left: -350px;
+      font-family: 'Oswald', sans-serif;
     }
     p {
       margin: 0;
-      margin-top: 100px;
-      font-size: 200px;
       color: white;
       font-family: 'Open Sans', sans-serif;
+      margin-bottom: 5px;
+    }
+    input {
+      font-family: 'Oswald', sans-serif;
+      border-radius: 5px;
+      border: none;
+      padding: 5px;
+    }
+    #messagesDiv {
+      width: 350px;
+      color: white;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 40px;
+      text-align: left;
+      margin-bottom: 100px;
+    }
+    .center {
       text-align: center;
+    }
+    .fixed {
+      position: fixed;
+    }
+    .max-width {
+      width: 100%;
+    }
+    #input-super-container {
+      bottom: 0;
+      height: 150px;
+      background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,1) 99%, rgba(0,0,0,1) 100%); /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(99%,rgba(0,0,0,1)), color-stop(100%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 99%,rgba(0,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 99%,rgba(0,0,0,1) 100%); /* Opera 11.10+ */
+      background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 99%,rgba(0,0,0,1) 100%); /* IE10+ */
+      background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 99%,rgba(0,0,0,1) 100%); /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+    }
+    #input-container {
+      margin-top: 70px;
     }
   </style>
 </head>
 
 <body>
-  <div id='messagesDiv'></div>
-  <input type='text' id='nameInput' placeholder='Name'>
-  <input type='text' id='messageInput' placeholder='Message'>
+  <div class="center">
+    <div id="title-container" class="fixed center max-width">
+      <h1 id="title">Crothers Family Chat</h1>
+    </div>
+    <div id='messagesDiv'></div>
+    <div id="input-super-container" class="fixed center max-width">
+      <div id="input-container">
+        <input type='text' id='nameInput' placeholder='Name' size="20">
+        <input type='text' id='messageInput' placeholder='Message' size="60">
+      </div>
+    </div>
+    <div id="bottom-padding"></div>
+  </div>
   <script>
-    var myDataRef = new Firebase('https://mz8yqxffhh1.firebaseio-demo.com/');
+    var myDataRef = new Firebase('https://crackling-inferno-873.firebaseio.com/');
       $('#messageInput').keypress(function (e) {
         if (e.keyCode == 13) {
           var name = $('#nameInput').val();
           var text = $('#messageInput').val();
-          myDataRef.push({name: name, text: text});
+          var date = new Date();
+          var h = date.getHours();
+          var h = date.getMinutes();
+          var h = date.getSeconds();
+          myDataRef.push({name: name, text: text, time: date.toLocaleString()});
           $('#messageInput').val('');
         }
       });
     myDataRef.on('child_added', function(snapshot) {
       var message = snapshot.val();
-      displayChatMessage(message.name, message.text);
+      displayChatMessage(message.name, message.text, message.time);
     });
-    function displayChatMessage(name, text) {
-        $('<div/>').text(text).prepend($('<em/>').text(name+': ')).appendTo($('#messagesDiv'));
-        $('#messagesDiv')[0].scrollTop = $('#messagesDiv')[0].scrollHeight;
+    function displayChatMessage(name, text, time) {
+        $('<p/>').append($('<div/>').text(text).prepend($('<b/>').text(name+': ')).attr("style", "margin-right: 10px;").append($('<span/>').attr("style", "font-size: 10px; margin-left:5px; float: right; margin-top: 5px;").text(time))).appendTo($('#messagesDiv'));
+        $('body')[0].scrollTop = $('body')[0].scrollHeight;
       };
   </script>
 </body>
